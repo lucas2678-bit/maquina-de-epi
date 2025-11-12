@@ -17,10 +17,10 @@ function calcular(){
     }
         if (fsex[1].checked) {
         epi = 'protetor auricular'
-        if (quan >= 1 && quan <= 4){
+        if (quan >= 1 && quan < 4){
             res.innerHTML += `${quan} ${epi} selecionados tenha um bom dia`
         } else {
-            res.innerHTML += `<p>Você selecionou <strong> ${quan}   ${epi}</strong> Voce não pode selecionar essa quantidade</p>`
+            res.innerHTML += `<p>Você selecionou <strong> ${quan} ${epi} </strong> Voce não pode selecionar essa quantidade</p>`
         }
     }
 
@@ -29,7 +29,7 @@ function calcular(){
         if (quan >=1 && quan < 4){
           res.innerHTML += `${quan} ${epi} selecionados tenha um bom dia`
         } else{
-            res.innerHTML += `<p>Você selecionou <strong> ${quan} ${epi}s </strong> Voce não pode selecionar essa quantidade</p>`
+            res.innerHTML += `<p>Você selecionou <strong> ${quan} ${epi} </strong> Voce não pode selecionar essa quantidade</p>`
         }
     }
         res.innerHTML += `<p> Obrigado por confiar na CyberShield Systems</p>`
